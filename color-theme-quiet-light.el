@@ -20,8 +20,9 @@ Port of the eponymous theme for Espresso on Mac OS X."
   (let ((selection-color (if (featurep 'ns) "ns_selection_color" "#C9D0D9"))
         (highlight-color "#EEE00A")
         (secondary-color "#D3E1CD")
-        (passive-color "#AAAAAA")
-        (subtle-color "#EEEEEE")
+        (active-color "#FFFEDB")
+        (passive-color "#CCCCCC")
+        (subtle-color "#E8E8E8")
         (error-color "#EEE3E3"))
     (color-theme-install
      `(color-theme-quiet-light
@@ -53,7 +54,7 @@ Port of the eponymous theme for Espresso on Mac OS X."
        (show-paren-mismatch ((t (:foreground ,error-color :background "#660000"))))
 
        ;; Highlighting
-       (hl-line ((t (:background ,subtle-color))))
+       (hl-line ((t (:background ,active-color))))
        (highlight ((t (:background ,highlight-color))))
        (highlight-symbol-face ((t (:background ,secondary-color))))
        (isearch ((t (:background ,highlight-color))))
