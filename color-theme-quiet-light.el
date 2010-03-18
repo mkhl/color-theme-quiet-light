@@ -25,8 +25,8 @@ Port of the eponymous theme for Espresso on Mac OS X."
         (error-color "#EEE3E3"))
     (color-theme-install
      `(color-theme-quiet-light
-       ((background-color . "#F5F5F5")
-        (background-mode . light)
+       ((background-mode . light)
+        (background-color . "#F5F5F5")
         (border-color . "black")
         (cursor-color . "black")
         (foreground-color . "#333333"))
