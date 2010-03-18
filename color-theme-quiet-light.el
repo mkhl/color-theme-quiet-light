@@ -71,6 +71,7 @@ Port of the eponymous theme for Espresso on Mac OS X."
        ;; Font-lock
        (font-lock-builtin-face ((t (:foreground "#91B3E0"))))
        (font-lock-comment-face ((t (:italic t :foreground "#AAAAAA"))))
+       (font-lock-comment-delimiter-face ((t (:italic nil :foreground "#AAAAAA"))))
        (font-lock-constant-face ((t (:foreground "#AB6526"))))
        (font-lock-doc-string-face ((t (:foreground "#448C27"))))
        (font-lock-function-name-face ((t (:foreground "#AA3731"))))
