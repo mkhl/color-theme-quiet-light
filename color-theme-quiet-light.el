@@ -17,7 +17,7 @@
 
 Port of the eponymous theme for Espresso on Mac OS X."
   (interactive)
-  (let ((selection-color "#C9D0D9")
+  (let ((selection-color (if (featurep 'ns) "ns_selection_color" "#C9D0D9"))
         (highlight-color "#EEE00A")
         (secondary-color "#D3E1CD")
         (passive-color "#AAAAAA")
