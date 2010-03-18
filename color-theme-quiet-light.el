@@ -84,10 +84,26 @@ Port of the eponymous theme for Espresso on Mac OS X."
        (font-lock-variable-name-face ((t (:foreground "#7A3E9D"))))
        (font-lock-warning-face ((t (:foreground "#660000" :background "#EEE3E3"))))
 
+       ;; Diff Mode
+       (diff-file-header ((t (:bold t :inherit diff-header))))
+       (diff-header ((t (:background "#DDDDFF" :foreground "#434343"))))
+       (diff-added ((t (:background "#DDFFDD"))))
+       (diff-removed ((t (:background "#FFDDDD"))))
+       (diff-changed ((t (:background "#FFFFDD"))))
+       (diff-refine-change ((t (:background "#DDDDFF"))))
+
+       ;; Magit
+       (magit-diff-file-header ((t (:bold t :inherit diff-header))))
+       (magit-diff-hunk-header ((t (:inherit diff-header))))
+       (magit-diff-add ((t (:inherit diff-added :foreground "#434343"))))
+       (magit-diff-del ((t (:inherit diff-removed :foreground "#434343"))))
+       (magit-diff-none ((t (:inherit diff-context :foreground "#434343"))))
+       (magit-item-highlight ((t (:background nil :foreground "#232323"))))
+
        ;; Done
        ))))
 
 (add-to-list 'color-themes
-             '(color-theme-quiet-light "Quiet Light" "Martin Kuehl"))
+             '(color-theme-quiet-light "Quiet Light" "Martin Kühl"))
 
 (provide 'color-theme-quiet-light)
